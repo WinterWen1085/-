@@ -1,0 +1,7 @@
+﻿variable,rule_id,before_text,after_text,examples_positive,examples_negative,change_reason
+MethodTag,R_MT_01,,,,,
+MethodFamily,R_MF_01,,,,,
+Methodology,R_MD_01,,,,,
+MethodTransparency,R_TR_01,,,,,
+MethodNormativity,R_NM_01,,,,,
+coder_notes_rule_code,R_CN_01,,,,,
