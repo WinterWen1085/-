@@ -1,6 +1,6 @@
 # WinterWen-national-security-methods
 
-本仓库为硕士学位论文《国家安全学研究方法的演进、评估与规范》的线上材料库，用于集中存放论文实证部分的过程性文件、数据表、变量字典、SCALE（SCALE）编码相关材料，以及贝叶斯网络（Bayesian Network, BN）分析脚本与稳健性输出，便于同行在不接触原始全文材料的前提下，对论文的研究设计与操作口径进行查验、复核与检验性阅读。:contentReference[oaicite:1]{index=1}
+本仓库为硕士学位论文《国家安全学研究方法的演进、评估与规范》的线上材料库，用于集中存放论文实证部分的过程性文件、数据表、变量字典、SCALE编码相关材料，以及贝叶斯网络（Bayesian Network, BN）分析脚本与稳健性输出，便于同行在不接触原始全文材料的前提下，对论文的研究设计与操作口径进行查验、复核与检验性阅读。:contentReference[oaicite:1]{index=1}
 
 > 说明：本仓库不等同于“可一键复现”的软件工程项目；其定位是支持论文审阅时对关键口径（变量定义、离散化规则、编码结果、模型设定与稳健性证据）的核对。:contentReference[oaicite:2]{index=2}
 
@@ -9,15 +9,15 @@
 ## 目录与文件说明（按论文查验需求组织）
 
 ### 1. 过程说明
-- `过程说明/研究流程阅读指南.docx`：对论文实证主线（SCALE（SCALE）编码 → 封版数据 → BN（Bayesian Network）建模 → 稳健性/稳定性证据）的操作步骤与关键参数进行汇总说明。:contentReference[oaicite:3]{index=3}
-- `过程说明/SCALE简化版操作手册.docx`：SCALE（SCALE）编码流程的操作规程与记录要点（包括编码—讨论—代码簿演化—一致性度量等）。:contentReference[oaicite:4]{index=4}
+- `过程说明/研究流程阅读指南.docx`：对论文实证主线SCALE编码 → 封版数据 → BN（Bayesian Network）建模 → 稳健性/稳定性证据）的操作步骤与关键参数进行汇总说明。:contentReference[oaicite:3]{index=3}
+- `过程说明/SCALE简化版操作手册.docx`：SCALE编码流程的操作规程与记录要点（包括编码—讨论—代码簿演化—一致性度量等）。:contentReference[oaicite:4]{index=4}
 
 ### 2. 数据预处理与前期准备
 - `国家安全学相关期刊论文数据预处理.xlsx`：样本预处理与前期整理的记录性表格（用于核对样本筛选、字段构造与输入表形成过程）。:contentReference[oaicite:5]{index=5}
 - `数据预处理和前期准备部分/`：与预处理步骤相关的补充材料（如有）。:contentReference[oaicite:6]{index=6}
 
-### 3. SCALE（SCALE）相关材料（编码、校准、讨论、结果转化）
-以下目录用于支撑对“SCALE（SCALE）如何从文本证据生成结构化变量”的核对：
+### 3. SCALE相关材料（编码、校准、讨论、结果转化）
+以下目录用于支撑对“SCALE如何从文本证据生成结构化变量”的核对：
 - `SCALE_Agent/`：与多代理（agents）编码相关的提示词、设定与过程材料（如有）。:contentReference[oaicite:7]{index=7}
 - `SCALE_校准轮及结果汇总后的分析/`：校准阶段材料与汇总分析（如有）。:contentReference[oaicite:8]{index=8}
 - `SCALE_讨论轮/`：冲突池讨论与仲裁相关材料（如有）。:contentReference[oaicite:9]{index=9}
@@ -61,7 +61,7 @@
 
 ## 合规与边界说明
 
-- 本仓库不包含原始论文全文（如 CNKI 下载 PDF/全文文本），仅提供编码结果、变量字典、代码簿、脚本与输出证据，以避免版权与敏感材料外泄风险。  
+- 本仓库不包含原始论文全文（如CNKI下载PDF/全文文本），仅提供编码结果、变量字典、代码簿、脚本与输出证据，以避免版权与敏感材料外泄风险。  
 - 若仓库中出现任何可识别的原文长段落或版权受限内容，应以“证据摘录最小化”原则处理（例如仅保留方法识别所需的短句锚点），并以 paper_id/题录信息支持回溯。  
 
 ---
