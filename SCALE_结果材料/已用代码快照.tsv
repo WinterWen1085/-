@@ -1,0 +1,16 @@
+variable	code	count
+MethodTag_codes	10	3
+MethodTag_codes	20	68
+MethodTag_codes	30	2
+MethodTag_codes	NaN	7
+Methodology_codes	1	4
+Methodology_codes	2	5
+Methodology_codes	3	60
+Methodology_codes	NaN	11
+MethodTransparency_codes	1	37
+MethodTransparency_codes	2	33
+MethodTransparency_codes	3	1
+MethodTransparency_codes	NaN	9
+MethodNormativity_codes	1	8
+MethodNormativity_codes	2	61
+MethodNormativity_codes	NaN	11

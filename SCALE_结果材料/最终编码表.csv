@@ -1,0 +1,35 @@
+﻿variable,code,en_label,cn_label,aliases_en_pipe,aliases_cn_pipe,definition/anchor_short,notes
+MethodTag,10,Normative,规范,Normative|Legal-theory,规范研究|法理|法学|规范法学,以法条/原则/价值与概念辨析为主，缺可复核程序锚点,—
+MethodTag,20,Empirical,实证,Empirical,实证|经验研究,以数据/材料与可复核程序展开（定量/定性/混合）,—
+MethodTag,30,Technical,技术,Technical,技术|建模|模型|仿真|算法|网络分析|系统动力学,以模型/仿真/算法评测等技术程序为核心,—
+MethodTag,40,Philosophical,思辨,Philosophical|Discursive,思辨|哲学|话语|思想史|概念史,以思想/话语/概念史辨析为主，方法程序性较弱,—
+MethodFamily,101,Case Study,个案研究,Case study,个案|案例|单案|多案例,对单个/少量案例的深描与解释，给出材料与取舍标准、编码/证据链,—
+MethodFamily,102,Comparative Study,比较研究,Comparative,比较|对比|跨国比较|跨区域比较|跨时比较,明示比较维度与案例选择逻辑，呈现可比证据,—
+MethodFamily,103,Process Tracing,过程溯源,Process tracing,过程溯源|过程追踪|过程追溯,因果机制线索、关键事件序列与检验点，证据链可复核,—
+MethodFamily,104,Survey Research,调查研究,Survey,调查|问卷|问卷调查,问卷/题项/样本与规模/信度效度/抽样与权重等要素,—
+MethodFamily,105,Econometric/Statistical Inference,计量/统计推断,Econometric|Statistical,计量|统计|回归|OLS|Logit|Probit|IV|2SLS|RD|DID|面板|事件史,明示 N/变量/模型与估计、SE/CI、稳健性/工具变量/对照组等,—
+MethodFamily,106,Text/Content Analysis,文本/内容分析,Text analysis|Content analysis,文本分析|内容分析|语料|分词|词典|编码本|一致性,语料来源与预处理；词典/编码本；互评一致性；自动化流程/软件,—
+MethodFamily,107,Simulation/Modeling (ABM/System Dynamics/Optimization/Network),仿真/模型（ABM/系统动力学/优化/网络等）,Simulation|Modeling,仿真|模型|ABM|系统动力学|优化|网络模型|算法评测|计算实验,给出模型结构、参数/校准、数据流、仿真/计算实验与评测指标,—
+MethodFamily,108,Experiment/Quasi-Experiment,实验/准实验,Experiment|Quasi-experiment,实验|随机对照|RCT|实验组|对照组|现场实验|实验室实验|自然实验,实验或准实验设计与识别框架（RD/IV/DID 等通常归 105，如非实验范式）,留意与105边界；若为纯识别型计量推断优先 105
+MethodFamily,199,Normative/Philosophical (Insufficient),规范/思辨（不充分）,Normative (insufficient)|Philosophical (insufficient),规范评述|理论探讨|述评|综述,主要为法理/概念/原则评述，缺程序锚点，不足以归入101–108,如后续补足程序锚点，可升级
+Methodology,1,Normative,规范,Normative,规范,以规范性阐释为主，不涉程序化经验步骤,与 MethodTag=10/40 常同向
+Methodology,2,Quantitative,定量,Quantitative,定量|计量|统计,以数值数据与统计/计量模型为主,—
+Methodology,3,Qualitative,定性,Qualitative,定性|访谈|田野|档案|溯源,以质性材料与编码/主题/证据链为主,—
+Methodology,4,Mixed,混合,Mixed|Mixed methods,混合|混合方法|量化+质化,从严：定量与定性各自均满足锚点且呈现整合逻辑，“综合/系统”不等于混合,—
+MethodTransparency,0,Unknown,未知,Unknown,未知,无法判断是否给出方法小节、数据/样本规模、软件/代码、复现线索,—
+MethodTransparency,1,Low,低,Low,低,方法信息很少/缺失，复现线索不足,—
+MethodTransparency,2,Medium,中,Medium,中,有部分方法信息，但不完整或关键要素缺失,—
+MethodTransparency,3,High,高,High,高,有明确方法小节、数据/样本与规模、软件/代码、复现线索,—
+MethodNormativity,0,Unknown,未知,Unknown,未知,无法判断程序充分性,—
+MethodNormativity,1,Insufficient,不足,Insufficient,不足,缺设计/变量或编码/识别策略/稳健性等关键要素,—
+MethodNormativity,2,Moderate,一般,Moderate,一般,基本呈现程序要素，但深度/稳健性一般,—
+MethodNormativity,3,Sufficient,充足,Sufficient,充足,设计/变量/识别/稳健性等要素完整，程序充分,—
+coder_notes_rule_code,901,R1 (NOR sufficiency aid),R1 程序充分性辅助,R1,NOR|程序充分性|识别|稳健性|设计|变量/编码,仅用于解释为何判定 Normativity（充足/一般/不足），不单独决定 Family,在 coder_notes 中写 "901" + 英文短句
+coder_notes_rule_code,902,R2 (Normative/Philosophical insufficient),R2 规范/思辨（不充分）,R2,规范评述|概念/法条|缺锚点,支持 Family=199 与 Tag=10/40 的判定,—
+coder_notes_rule_code,903,R3 (Mixed methods strict),R3 混合方法（从严）,R3,混合方法|量化+质化|整合逻辑,定量与定性均满足锚点且有整合，方可判 Methodology=4,—
+coder_notes_rule_code,904,R4 (Text/Content analysis),R4 文本/内容分析,R4,语料|词典|编码本|一致性|自动化,支持 Family=106 的判定,—
+coder_notes_rule_code,905,R5 (Qualitative/case),R5 定性/个案,R5,访谈|田野|档案|主题编码|扎根,支持 Family=101 或定性法判定,—
+coder_notes_rule_code,906,R6 (Comparative),R6 比较研究,R6,比较维度|案例选择|对照逻辑,支持 Family=102 的判定,—
+coder_notes_rule_code,907,R7 (Quant/econometrics),R7 定量/计量推断,R7,N|变量|OLS|Logit|IV|RD|DID|面板|EHA|稳健性,支持 Family=105 的判定,—
+coder_notes_rule_code,908,R8 (Process tracing),R8 过程溯源,R8,因果机制|事件序列|关键证据点,支持 Family=103 的判定,—
+coder_notes_rule_code,909,R9 (Technical/modeling),R9 技术/仿真/模型,R9,ABM|系统动力学|优化|网络|算法评测|参数|校准|数据流|计算实验,支持 Family=107（Tag=30）判定,—

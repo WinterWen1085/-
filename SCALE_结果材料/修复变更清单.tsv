@@ -1,0 +1,4 @@
+paper_id	rule	var_fix	old	new	reason
+64	R2	Methodology_codes	1.0		Tag=20(实证) 与 Methodology=1(规范) 冲突 → Methodology置空以保守消解
+8	R3	Methodology_codes	2.0		Tag=30(技术) 与 Methodology≠5 冲突 → Methodology置空以保守消解
+75	R3	Methodology_codes	2.0		Tag=30(技术) 与 Methodology≠5 冲突 → Methodology置空以保守消解
