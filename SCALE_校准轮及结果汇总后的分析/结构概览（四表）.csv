@@ -1,0 +1,5 @@
+﻿agent,rows,cols,columns
+agent_A,80,7,paper_id|MethodTag|MethodFamily|Methodology|MethodTransparency|MethodNormativity|coder_notes_rule_code
+agent_B,80,7,paper_id|MethodTag|MethodFamily|Methodology|MethodTransparency|MethodNormativity|coder_notes_rule_code
+agent_C,80,7,paper_id|MethodTag|MethodFamily|Methodology|MethodTransparency|MethodNormativity|coder_notes_rule_code
+agent_D,80,7,paper_id|MethodTag|MethodFamily|Methodology|MethodTransparency|MethodNormativity|coder_notes_rule_code

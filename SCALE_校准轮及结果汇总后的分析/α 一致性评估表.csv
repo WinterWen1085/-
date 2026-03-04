@@ -1,0 +1,7 @@
+﻿column,level,alpha,n_coders,n_items
+MethodTag,nominal,0.005,4,80
+MethodFamily,nominal,0.045,4,80
+Methodology,nominal,0.025,4,80
+coder_notes_rule_code,nominal,0.046,4,80
+MethodTransparency,ordinal,-0.031,4,80
+MethodNormativity,ordinal,0.057,4,80
