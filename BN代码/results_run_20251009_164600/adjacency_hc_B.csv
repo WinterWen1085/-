@@ -1,0 +1,16 @@
+﻿,YearBin,PolicySalience,MethodFamily,E_SURVEY,E_STAT,E_CASE,E_EXP,E_POLICYEVAL,E_MODEL,E_TEXT,E_NORM,PoliticalSensitivity,SecrecyConstraint,topic,DataAccess
+YearBin,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+PolicySalience,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+MethodFamily,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E_SURVEY,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+E_STAT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E_CASE,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+E_EXP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E_POLICYEVAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E_MODEL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E_TEXT,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+E_NORM,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+PoliticalSensitivity,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+SecrecyConstraint,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+topic,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DataAccess,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

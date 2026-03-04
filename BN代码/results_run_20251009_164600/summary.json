@@ -1,0 +1,112 @@
+{
+  "seed": 20251008,
+  "run_dir": "./results_run_20251009_164600",
+  "cv_files": {
+    "A": "cv_A.json",
+    "B": "cv_B.json"
+  },
+  "scores_full": {
+    "A": {
+      "BIC": -4909.198854412204,
+      "K2": -4887.3154736795605
+    },
+    "B": {
+      "BIC": -6342.564921379246,
+      "K2": -6275.288853966251
+    }
+  },
+  "bootstrap": {
+    "n_boot": 200,
+    "stable_threshold": 0.7,
+    "A": {
+      "n_edges": 48,
+      "freq_mean": 0.21677083333333333,
+      "freq_median": 0.1,
+      "n_ge_th": 3,
+      "top5": [
+        [
+          [
+            "YearBin",
+            "PolicySalience"
+          ],
+          1.0
+        ],
+        [
+          [
+            "PoliticalSensitivity",
+            "SecrecyConstraint"
+          ],
+          1.0
+        ],
+        [
+          [
+            "E_CASE",
+            "E_EXP"
+          ],
+          0.75
+        ],
+        [
+          [
+            "E_CASE",
+            "E_POLICYEVAL"
+          ],
+          0.66
+        ],
+        [
+          [
+            "YearBin",
+            "DataAccess"
+          ],
+          0.655
+        ]
+      ]
+    },
+    "B": {
+      "n_edges": 50,
+      "freq_mean": 0.22770000000000004,
+      "freq_median": 0.11499999999999999,
+      "n_ge_th": 4,
+      "top5": [
+        [
+          [
+            "YearBin",
+            "PolicySalience"
+          ],
+          1.0
+        ],
+        [
+          [
+            "PoliticalSensitivity",
+            "SecrecyConstraint"
+          ],
+          1.0
+        ],
+        [
+          [
+            "YearBin",
+            "MethodFamily"
+          ],
+          0.86
+        ],
+        [
+          [
+            "E_CASE",
+            "E_EXP"
+          ],
+          0.75
+        ],
+        [
+          [
+            "E_CASE",
+            "E_POLICYEVAL"
+          ],
+          0.66
+        ]
+      ]
+    }
+  },
+  "notes": [
+    "使用 HillClimb+BIC 为主、PC 为辅；Dirichlet 平滑 ESS=1.5。",
+    "YearBin 与 topic 外生；MethodTransparency 若为常数将自动在学习阶段被忽略，但在作图时作为孤点补回。"
+  ]
+}

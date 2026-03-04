@@ -1,0 +1,88 @@
+{
+  "script_name": "bn_pipeline_v2.py",
+  "script_version": "v2.2",
+  "random_seed": 20251008,
+  "data_file": "./scale_labels_bn_ready.csv",
+  "run_dir": "./results_run_YYYYMMDD_HHMMSS",
+  "discretization": {
+    "year": {
+      "enabled": true,
+      "target_col": "YearBin",
+      "method": "auto_bin", 
+      "n_bins": "recorded_in_code", 
+      "bin_edges": "logged_in_stdout_or_fig_captions"
+    },
+    "topic": {
+      "enabled": true,
+      "unique_nonzero": 4,
+      "note": "原始topic经脚本离散化为四类"
+    }
+  },
+  "imputation_or_proxy": {
+    "MethodNormativity_from_MethodTransparency": {
+      "mapping": { "H": 3, "M": 2, "L": 1, "unknown": 0 },
+      "applied": true
+    }
+  },
+  "schemes": {
+    "A": {
+      "columns": ["YearBin","topic","E_EXP","E_STAT","E_SURVEY","E_CASE","E_ETHNO","E_TEXT","E_MODEL","E_POLICYEVAL","E_MIXED","E_NORM","PolicySalience","PoliticalSensitivity","SecrecyConstraint","DataAccess","MethodTransparency"],
+      "dropped_constants": ["E_ETHNO","E_MIXED","MethodTransparency"],
+      "structure_learning": {
+        "HC_BIC": {
+          "start_edges": [["PoliticalSensitivity","SecrecyConstraint"]],
+          "white_list_mode": "disabled_as_hard_constraint",
+          "black_list": "如stdout所示（禁止时间/主题被指向的非因果方向）",
+          "score": "BIC",
+          "max_iter": 200
+        },
+        "PC_aux": {
+          "enabled": true,
+          "max_cond_vars": 5
+        }
+      }
+    },
+    "B": {
+      "columns": ["YearBin","topic","E_EXP","E_STAT","E_SURVEY","E_CASE","E_ETHNO","E_TEXT","E_MODEL","E_POLICYEVAL","E_MIXED","E_NORM","MethodFamily","MethodNormativity","PolicySalience","PoliticalSensitivity","SecrecyConstraint","DataAccess","MethodTransparency"],
+      "dropped_constants": ["E_ETHNO","E_MIXED","MethodNormativity","MethodTransparency"],
+      "structure_learning": {
+        "HC_BIC": {
+          "start_edges": [["topic","MethodFamily"],["PolicySalience","MethodFamily"],["PoliticalSensitivity","SecrecyConstraint"]],
+          "white_list_mode": "disabled_as_hard_constraint",
+          "black_list": "如stdout所示（阻止MethodFamily被部分外生节点反向指向）",
+          "score": "BIC",
+          "max_iter": 200
+        },
+        "PC_aux": {
+          "enabled": true,
+          "max_cond_vars": 5
+        }
+      }
+    }
+  },
+  "parameter_estimation": {
+    "method": "BayesianEstimator",
+    "prior": "Dirichlet",
+    "equivalent_sample_size": 1.5
+  },
+  "cross_validation": {
+    "enabled": false,
+    "k_folds": null,
+    "note": "本轮v2.2未执行k折；如需，保持与v2.1相同的5折设置"
+  },
+  "bootstrap": {
+    "enabled": false,
+    "n_boot": null,
+    "note": "本轮v2.2未执行结构自助稳定性；若需请在脚本开关处设为True并指定n_boot=200"
+  },
+  "plots_and_exports": {
+    "export_format": ["png","csv","json"],
+    "dpi": 300,
+    "font": "SimHei (若可用)"
+  },
+  "environment": {
+    "python": "3.12.x",
+    "os": "Windows",
+    "note": "绘图使用matplotlib；如出现tkinter相关提醒为GUI后端回收提示，不影响文件导出"
+  }
+}

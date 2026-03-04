@@ -1,0 +1,25 @@
+﻿variable,dtype,n_unique,examples
+paper_id,int64,800,1; 2; 3; 4; 5; 6
+E_EXP,int64,2,0; 1
+E_STAT,int64,2,0; 1
+E_SURVEY,int64,2,0; 1
+E_CASE,int64,2,1; 0
+E_ETHNO,int64,1,0
+E_TEXT,int64,2,1; 0
+E_MODEL,int64,2,0; 1
+E_POLICYEVAL,int64,2,0; 1
+E_MIXED,int64,1,0
+E_NORM,int64,2,0; 1
+MethodFamily,int64,9,901; 905; 904; 909; 903; 902
+MethodTag,int64,4,40; 20; 10; 30
+Methodology,int64,5,3; 1; 5; 4; 2
+method_class,object,4,empirical-quant/tech; empirical-qual; normative; mixed
+MethodTransparency,int64,1,0
+PolicySalience,int64,4,2; 3; 0; 1
+PoliticalSensitivity,int64,4,3; 0; 2; 1
+SecrecyConstraint,int64,4,0; 3; 1; 2
+DataAccess,int64,4,2; 0; 3; 1
+year,int64,27,2022; 2023; 2024; 2025; 1999; 2000
+topic,object,4,3; 1; 2; 4
+YearBin,object,4,Y4; Y1; Y2; Y3
+MethodNormativity,int64,1,0
